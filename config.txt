@@ -1,0 +1,33 @@
+# config.py
+
+import torch
+
+# -- PROJECT CONFIGURATION --
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+ROOT_DIR = '/kaggle/input/Gopro' # Or './GOPRO_Large/'
+CROP_SIZE = 256
+
+# -- TRAINING HYPERPARAMETERS --
+NUM_EPOCHS = 30
+BATCH_SIZE = 8
+NUM_WORKERS = 4
+
+# -- OPTIMIZER CONFIGURATION --
+GEN_LR = 2e-4
+DISC_LR = 5e-5
+GEN_BETAS = (0.5, 0.999)
+
+# -- SCHEDULER CONFIGURATION --
+GEN_SCHEDULER_GAMMA = 0.98
+DISC_SCHEDULER_GAMMA = 0.92
+
+# -- LOSS WEIGHTS & ADAPTIVE PARAMS --
+LAMBDA_GP = 10.0
+LAMBDA_PERCEPTUAL = 1.0
+INITIAL_LAMBDA_L1 = 5.0
+INITIAL_LAMBDA_GAN = 1.0
+INITIAL_DISC_TRAIN_FREQ = 3
+
+# -- MODEL SAVING --
+MODEL_SAVE_PATH = 'deblur_gen_advanced_epoch_{}.pth'
+VISUALIZATION_SAVE_PATH = 'viz_epoch_{}.png'
