@@ -118,4 +118,4 @@ class MultiScaleDiscriminator(nn.Module):
             net_d = getattr(self, 'discriminator_' + str(i))
             outputs.append(net_d(x))
             x = F.avg_pool2d(x, kernel_size=3, stride=2, padding=[1, 1], count_include_pad=False)
-        return outputs
+        return outputs# Add Discriminator
