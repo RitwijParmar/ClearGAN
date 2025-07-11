@@ -134,4 +134,4 @@ def validate_one_epoch(gen, disc, val_loader, losses, adaptive_hp, config, epoch
                 plt.savefig(config.VISUALIZATION_SAVE_PATH.format(epoch))
                 plt.close()
                 
-    return val_psnr / len(val_loader), val_ssim / len(val_loader)
+    return val_psnr / len(val_loader), val_ssim / len(val_loader)# Add validation logic
