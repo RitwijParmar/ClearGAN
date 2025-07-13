@@ -139,3 +139,4 @@ The performance of **ClearGAN** is evaluated on a held-out validation set using 
 
 These results are based on the model's performance after 29 epochs of training and provide a solid baseline for image deblurring tasks. The scores highlight ClearGAN's ability to effectively restore sharp images from blurry inputs.
 
+## Results
