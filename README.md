@@ -7,7 +7,7 @@
 
 An advanced Generative Adversarial Network (GAN) built with PyTorch, designed to remove motion blur from images with high fidelity.
 
-![Deblurring Example](blur_sharpen.jpg)
+![Deblurring Example](blur_sharpen.png)
 
 ---
 
